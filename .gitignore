@@ -7,3 +7,6 @@ preview.local.jsonc
 
 scripts/*.local.mjs
 sites-preview.local.json
+/freebuff-sites-build/
+
+bun.lock
