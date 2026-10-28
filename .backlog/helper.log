@@ -1,0 +1,24 @@
+
+ ⛅️ wrangler 4.151.0
+────────────────────
+Your Worker has access to the following bindings:
+Binding                              Resource            Mode
+env.REALTIME (FreebuffRealtime)      Durable Object      local
+
+⎔ Starting local server...
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1m*** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1744: failed: SQLite failed; dbErrorMessage(err, db) = database is locked: SQLITE_BUSY[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mstack: 7ff68179033e 7ff6817a0ac4 7ff680d9dd75 7ff6811715c7 7ff681170b40 7ff680d7fb28 7ff680d7f2c8 7ff680d7bf56 7ff680e3ac66 7ff67f7b3c86 7ff680ff3d03 7ff680ff38db 7ff67f7b1845 7ff680fa1691 7ff680d23250 7ff680d26d4c 7ff67f7b1005 7ff680ffdd9f 7ff67f7b105b 7ff6831101ce 7ff8300cdda6 7ff83163ee4b[0m
+
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mThe Workers runtime failed to start. There was likely a problem with the workerd binary or your configuration.[0m
+
+  Runtime stderr:
+  *** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1744: failed: SQLite failed; dbErrorMessage(err, db) = database is locked: SQLITE_BUSY
+  stack: 7ff68179033e 7ff6817a0ac4 7ff680d9dd75 7ff6811715c7 7ff681170b40 7ff680d7fb28 7ff680d7f2c8 7ff680d7bf56 7ff680e3ac66 7ff67f7b3c86 7ff680ff3d03 7ff680ff38db 7ff67f7b1845 7ff680fa1691 7ff680d23250 7ff680d26d4c 7ff67f7b1005 7ff680ffdd9f 7ff67f7b105b 7ff6831101ce 7ff8300cdda6 7ff83163ee4b
+
+
+[32mIf you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose[0m
+🪵  Logs were written to "C:\Users\Lenovo\AppData\Roaming\xdg.config\.wrangler\logs\wrangler-2026-10-27_05-44-34_820.log"

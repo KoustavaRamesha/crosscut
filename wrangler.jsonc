@@ -1,0 +1,24 @@
+{
+  "name": "crosscut",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "vars": {
+    "FREEBUFF_CLIENT_ID": "08aadc11-c912-42a0-8147-07b4fb4e61ea",
+    "FREEBUFF_ISSUER": "https://freebuff.com/oidc",
+    "APP_ORIGIN": "http://localhost:8796"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "REALTIME",
+        "class_name": "FreebuffRealtime",
+        "script_name": "freebuff-sites-realtime-local"
+      }
+    ]
+  }
+}
